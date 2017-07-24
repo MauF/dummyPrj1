@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mau.test.dummy</groupId>
+    <groupId>com.primeur.spent</groupId>
     <artifactId>prj1</artifactId>
     <version>0.1-SNAPSHOT</version>
 
@@ -41,8 +41,24 @@
                 <!--<scmCommentPrefix>[RELEASE]</scmCommentPrefix>-->
                 <!--</configuration>-->
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>primeur</id>
+            <url>http://nexus.primeur.com/content/repositories/spent_release</url>
+        </repository>
+        <snapshotRepository>
+            <id>primeur</id>
+            <url>http://nexus.primeur.com/content/repositories/spent_snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 
 </project>
