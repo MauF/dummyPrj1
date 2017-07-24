@@ -8,9 +8,41 @@
     <artifactId>prj1</artifactId>
     <version>0.1-SNAPSHOT</version>
 
+    <packaging>jar</packaging>
+    <name>prj1</name>
+
     <properties>
 
     </properties>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/MauF/dummyPrj1.git</developerConnection>
+        <connection>scm:git:https://github.com/MauF/dummyPrj1.git</connection>
+    </scm>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>external.atlassian.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0-m5.1</version>
+                <!--<configuration>-->
+                <!--<flowInitContext>-->
+                <!--<masterBranchName>master</masterBranchName>-->
+                <!--<developBranchName>development</developBranchName>-->
+                <!--<featureBranchPrefix>feature-</featureBranchPrefix>-->
+                <!--<releaseBranchPrefix>release-</releaseBranchPrefix>-->
+                <!--<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>-->
+                <!--<versionTagPrefix>version-</versionTagPrefix>-->
+                <!--</flowInitContext>-->
+                <!--<noDeploy>true</noDeploy>-->
+                <!--<squash>true</squash>-->
+                <!--<scmCommentPrefix>[RELEASE]</scmCommentPrefix>-->
+                <!--</configuration>-->
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
