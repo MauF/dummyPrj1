@@ -34,11 +34,6 @@
             <password>admin123</password>
         </server>
         <server>
-            <id>collabnet.primeur.com</id>
-            <username>mauriziof</username>
-            <password>maurizio</password>
-        </server>
-        <server>
             <id>primeur</id>
             <username>admin</username>
             <password>admin123</password>
